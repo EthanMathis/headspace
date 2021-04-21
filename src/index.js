@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Headspace } from './components/Headspace'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Headspace />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
