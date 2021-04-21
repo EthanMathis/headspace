@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# HeadSpace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HeadSpace is an app designed to help musicians & songwriters do what they love most. It is an environment for you to take all your song ideas, lyrics & chord structures and store them in one easily accessable hub. You can create, view, edit and remove songs from your personal collection. You can also take any song from your collection and allow friends to view or even edit & add to your creations. Once you log in head over to the 'Friends" tab where you can add friends, send and recieve private messages & even check out collections from anyone on your friends list. The interface for creating new songs is designed with musicians in mind. When you click on 'Create Song' you will be presented with a template to get you started. The idea is to give the user the option to write however they choose to. 
 
-## Available Scripts
 
-In the project directory, you can run:
+### My Collection
+
+This is the place where all of your creations will be stored. from here you can:
+* Create new songs and save them to your private collection
+* Edit or Delete songs you have already stored
+* View your private & public collections
+
+### Friends
+
+This is where you will be able to interact with other users on HeadSpace. features include:
+* A friend list that allows you to add/remove friends as well as view any of their public song collections
+* A private messaging feature for you and your friends to collaborate on song ideas or chat about nonsense
+
+## Technologies 
+* HTML
+* CSS
+* Javascript
+* ReactJS
+* Bootstrap
+* JSON Server
+
+## How to use this app
+
+In your terminal, navigate to the directory you wish to create the app in and type:
+
+### `git clone git@github.com:EthanMathis/.git`
+
+Once you've cloned it down, cd into that directory and install the additional dependancies by running:
+
+### `npm install`
+
+This project will also use a JSON database running on port 8088. 
+Once everything is installed cd to the source directory and run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframe and ERD
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](Wireframe.png)
+![](ERD.png)
