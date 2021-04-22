@@ -1,43 +1,60 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Ethan Mathis",
-            "email": "ethan@me.com"
-        },
-        {
-            "id": 2,
-            "name": "Doug Mathis",
-            "email": "doug@me.com"
-        },
-        {
-            "id": 3,
-            "name": "Ryan Mathis",
-            "email": "ryan@me.com"
-        }
-    ],
-    "friends": [
-        {
-            "id": 1,
-            "userId": 1,
-            "friendId": 2
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "friendId": 1
-        },
-        {
-            "id": 3,
-            "userId": 1,
-            "friendId": 3
-        },
-        {
-            "id": 4,
-            "userId": 3,
-            "friendId": 1
-        }
-    ],
-    "songs": [],
-    "messages": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Ethan Mathis",
+      "email": "ethan@me.com"
+    },
+    {
+      "id": 2,
+      "name": "Doug Mathis",
+      "email": "doug@me.com"
+    },
+    {
+      "id": 3,
+      "name": "Ryan Mathis",
+      "email": "ryan@me.com"
+    },
+    {
+      "email": "louis@me.com",
+      "name": "Louis Cato",
+      "id": 4
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "currentUserId": 1,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "currentUserId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "currentUserId": 1,
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "currentUserId": 3,
+      "userId": 1
+    },
+    {
+      "currentUserId": 4,
+      "userId": 2,
+      "id": 5
+    }
+  ],
+  "songs": [],
+  "messages": [
+      {
+          "id": 1,
+          "userId": 1,
+          "friendId": 3,
+          "message": "Hey bro"
+      }
+  ]
 }

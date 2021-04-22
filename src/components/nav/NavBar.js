@@ -19,7 +19,10 @@ export const NavBar = (props) => {
                 <li className="nav-item">
                     <Link className="nav-link" to="/friends">Friends</Link>
                 </li>
-                <li className="navbar-item">
+            </ul>
+
+            <ul className="list-unstyled">
+                <li className="nav-item">
                     <button type="button" className="btn btn-outline-danger navbar-right" onClick={handleLogout}> Logout </button>
                 </li>
             </ul>
