@@ -1,7 +1,17 @@
 const url = "http://localhost:8088"
 
+export const getAllMessages = () => {
+    return fetch(`${url}/messages`)
+    .then(response => response.json())
+}
+
 export const getMessagesByFriendId = (friendId) => {
     return fetch(`${url}/messages?friendId=${friendId}&_expand=user`)
+    .then(response => response.json())
+}
+
+export const getMessagesByUserId = (userId) => {
+    return fetch(`${url}/messages?userId=${userId}&_expand=user`)
     .then(response => response.json())
 }
 
@@ -36,4 +46,13 @@ export const updateMessage = (msgObj) => {
         },
         body: JSON.stringify(msgObj)
     }).then(response => response.json())
+}
+
+export const getConversation = (userId, friendId) => {
+    Promise.all([
+        fetch(`${url}/messages?userId=${userId}&_expand=user`),
+        fetch(`${url}/messages?friendId=${friendId}&_expand=user`)
+    ]).then(responses => {
+        return Promise.all(responses.map(response => response.json()))
+    }).then(response => console.log(response))
 }
