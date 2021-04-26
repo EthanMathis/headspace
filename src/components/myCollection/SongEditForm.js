@@ -48,7 +48,7 @@ export const SongEditForm = () => {
         <div className="songEditForm">
 
             <textarea id="lyrics" 
-                      cols="50" 
+                      cols="60" 
                       rows="25" 
                       value={editSong.lyrics} 
                       onChange={handleInputChange}>

@@ -46,8 +46,9 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nutshell</h1>
-                    <h2>Please sign in</h2>
+                    <h1>Welcome to Headspace</h1>
+                    <h2>- A Songwriting Tool For Musicians -</h2>
+                    <h2>Sign Up or Log In To Get Started</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
