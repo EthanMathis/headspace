@@ -50,11 +50,11 @@
   ],
   "songs": [
     {
+      "id": 1,
       "userId": 1,
       "title": "Free Fallin",
       "lyrics": " [Verse 1]\nD/F#  G     G      D/F#  A\nShe's a good  girl, loves  her   mama.\n      D/F# G       G    D/F#  A\nLoves Je- sus, and America    too.\n       D/F#  G     G      D/F#  A\nShes a good  girl, crazy 'bout  Elvis\n      D/F# G            G   D/F#   A\nLoves hor- ses, and her boy-friend too, yeah yeah.\n\n[Verse 2]\n       D/F#  G   G      D/F#  A\nIt's a long  day living in    Reseda.\n          D/F#  G   G       D/F#        A\nThere's a free- way runnin' through the yard.\n      D/F#  G            G     D/F#  A\nI'm a bad   boy 'cause I don't even  miss her.\n      D/F#  G       G        D/F#  A\nI'm a bad   boy for breakin' her   heart.\n\n[Chorus]\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'",
-      "isPublic": false,
-      "id": 1
+      "isPublic": false
     },
     {
       "userId": 2,

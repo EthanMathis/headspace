@@ -5,6 +5,7 @@ import { FriendsList } from "./friends/FriendsList"
 import { MyCollection } from "./myCollection/CollectionList"
 import { FriendCollection } from "./myCollection/FriendCollectionList"
 import { FriendSongView } from "./myCollection/FriendSongView"
+import { MySongView } from "./myCollection/MySongView"
 import { NewSongInput } from "./myCollection/newSong"
 import { SongEditForm } from "./myCollection/SongEditForm"
 
@@ -15,17 +16,21 @@ export const ApplicationViews = () => {
             <MyCollection />
         </Route>
 
-        <Route path="/friends">
-            <FriendsList />
-            {/* <MessageList /> */}
-        </Route>
-
         <Route path="/song/createSong">
             <NewSongInput />
         </Route>
 
         <Route path="/song/:songId(\d+)/edit">
             <SongEditForm />
+        </Route>
+
+        <Route path="/song/:songId(\d+)/view">
+            <MySongView />
+        </Route>
+
+        <Route path="/friends">
+            <FriendsList />
+            {/* <MessageList /> */}
         </Route>
 
         <Route path="/friendCollection/:friendId(\d+)">
