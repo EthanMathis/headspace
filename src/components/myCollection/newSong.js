@@ -23,6 +23,8 @@ export const NewSongInput = () => {
         setNewSong(newSongCopy)
     }
 
+    
+
     const handleAddSong = (event) => {
         event.preventDefault()
         setIsLoading(true)
@@ -42,6 +44,7 @@ export const NewSongInput = () => {
             <textarea id="lyrics" cols="60" rows="25" value={newSong.lyrics} onChange={handleInputChange}>
 
             </textarea>
+            <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/")}>Scrap It</button>
             <button type="button" className="btn btn-outline-success" disabled={isLoading} onClick={handleAddSong}>Save It</button>
         </div>
     )

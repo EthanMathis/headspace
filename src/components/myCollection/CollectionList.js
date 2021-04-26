@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { SongCard } from "./SongCard"
 import { Link } from "react-router-dom"
-import { getUserSongs } from "../../modules/songManager"
+import { deleteSong, getUserSongs } from "../../modules/songManager"
 
 
 export const MyCollection = () => {
@@ -15,6 +15,11 @@ export const MyCollection = () => {
         .then(response => setSongs(response))
     }
 
+    const handleDelete = (songId) => {
+        deleteSong(songId)
+        .then(response => getSongs())
+    }
+
     useEffect(() => {
         getSongs()
     }, [])
@@ -24,7 +29,8 @@ export const MyCollection = () => {
         <div className="SongCards">
             {songs.map(song =>
                 <SongCard key={song.id}
-                          song={song} /> )}
+                          song={song}
+                          handleDelete={handleDelete} /> )}
         </div>
         <Link to={`/song/createSong`}>
             <button type="button" className="btn btn-success">Create New Song</button>

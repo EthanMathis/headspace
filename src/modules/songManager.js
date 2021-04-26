@@ -22,11 +22,19 @@ export const getSongById = (songId) => {
 }
 
 export const updateSong = (songObj) => {
-    return fetch(`${url}/songs`, {
+    return fetch(`${url}/songs/${songObj.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(songObj)
-    }).then(response => response.json())
+    })
+    .then(response => response.json())
+}
+
+export const deleteSong = (songId) => {
+    return fetch(`${url}/songs/${songId}`, {
+        method: "DELETE"
+    })
+    .then(response => response.json())
 }
