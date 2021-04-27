@@ -12,8 +12,7 @@ export const NewSongInput = () => {
     const [newSong, setNewSong] = useState({
         userId: loggedInUser,
         title: "",
-        lyrics: "",
-        isPublic: false
+        lyrics: ""
     })
 
     const handleInputChange = (event) => {

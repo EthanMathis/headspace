@@ -35,8 +35,7 @@ export const SongEditForm = () => {
             id: editSong.id,
             userId: loggedInUser,
             title: editSong.title,
-            lyrics: editSong.lyrics,
-            isPublic: false
+            lyrics: editSong.lyrics
         }
         updateSong(editedSong)
         .then(() => history.push("/"))

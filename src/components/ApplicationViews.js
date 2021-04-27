@@ -1,7 +1,6 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { FriendsList } from "./friends/FriendsList"
-// import { MessageList } from "./messages/MessageList"
 import { MyCollection } from "./myCollection/CollectionList"
 import { FriendCollection } from "./myCollection/FriendCollectionList"
 import { FriendSongView } from "./myCollection/FriendSongView"
@@ -30,7 +29,6 @@ export const ApplicationViews = () => {
 
         <Route path="/friends">
             <FriendsList />
-            {/* <MessageList /> */}
         </Route>
 
         <Route path="/friendCollection/:friendId(\d+)">
