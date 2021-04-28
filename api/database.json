@@ -69,16 +69,10 @@
   ],
   "userSongs": [
     {
-      "songId": 4,
-      "userId": 1,
-      "canEdit": false,
-      "id": 2
-    },
-    {
-      "songId": 4,
-      "userId": 3,
-      "canEdit": false,
-      "id": 3
+      "id": 2,
+      "songId": 1,
+      "userId": 2,
+      "canEdit": true
     }
   ]
 }
