@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { FriendsList } from "./friends/FriendsList"
 import { MyCollection } from "./myCollection/CollectionList"
 import { FriendCollection } from "./myCollection/FriendCollectionList"
+import { FriendSongEditForm } from "./myCollection/FriendSongEditForm"
 import { FriendSongView } from "./myCollection/FriendSongView"
 import { MySongView } from "./myCollection/MySongView"
 import { NewSongInput } from "./myCollection/newSong"
@@ -35,8 +36,12 @@ export const ApplicationViews = () => {
             <FriendCollection />
         </Route>
 
-        <Route path="/friendSong/:songId(\d+)">
+        <Route exact path="/friendSong/:songId(\d+)">
             <FriendSongView /> 
+        </Route>
+
+        <Route path="/friendSong/:songId(\d+)/edit">
+            <FriendSongEditForm />
         </Route>
         </>
     )

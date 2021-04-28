@@ -3,39 +3,38 @@ import { useParams, useHistory } from "react-router-dom";
 import { getSongById, updateSong } from '../../modules/songManager';
 import "./newSong.css"; 
 
+export const FriendSongEditForm = () => {
+    
+    // const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
-export const SongEditForm = () => {
-
-    const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
-
-    const [editSong, setEditSong] = useState({})
+    const [editFriendSong, setEditFriendSong] = useState({})
     const [isLoading, setIsLoading] = useState(false)
-    const {songId} = useParams()
+    const { songId } = useParams()
     const history = useHistory()
 
     const getMySong = () => {
         getSongById(songId)
         .then(song => {
-            setEditSong(song)
+            setEditFriendSong(song)
             setIsLoading(false)
         })
     }
 
     const handleInputChange = (event) => {
-        const newSong = { ...editSong }
+        const newSong = { ...editFriendSong }
         let selectedVal = event.target.value
         newSong[event.target.id] = selectedVal
-        setEditSong(newSong)
+        setEditFriendSong(newSong)
     }
 
     const handleSaveEdit = (event) => {
         event.preventDefault()
         setIsLoading(true)
         const editedSong = {
-            id: editSong.id,
-            userId: loggedInUser,
-            title: editSong.title,
-            lyrics: editSong.lyrics
+            id: editFriendSong.id,
+            userId: editFriendSong.userId,
+            title: editFriendSong.title,
+            lyrics: editFriendSong.lyrics
         }
         updateSong(editedSong)
         .then(() => history.push("/"))
@@ -51,7 +50,7 @@ export const SongEditForm = () => {
             <textarea id="lyrics" 
                       cols="75" 
                       rows="25" 
-                      value={editSong.lyrics} 
+                      value={editFriendSong.lyrics} 
                       onChange={handleInputChange}>
             </textarea>
             <button type="button" 

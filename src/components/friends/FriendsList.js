@@ -18,7 +18,7 @@ export const FriendsList = () => {
     const getLoggedInUserFriends = () => {
         return getUserFriends(loggedInUser)
         .then(friendsFromAPI => {
-            console.log("friends from API", friendsFromAPI)
+            // console.log("friends from API", friendsFromAPI)
             setFriends(friendsFromAPI)
         })
     }
@@ -32,8 +32,8 @@ export const FriendsList = () => {
     // handles adding a friend by Id. RESETS STATE OF FRIENDS TO RENDER THE LIST AGAIN
     const handleAddFriend = (id) => {
         const newFriend = {
-            userId: loggedInUser,
-            friendId: id
+            currentUserId: loggedInUser,
+            userId: id
         }
         addFriend(newFriend)
         .then(() => getLoggedInUserFriends())

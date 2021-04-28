@@ -40,7 +40,7 @@ export const NewSongInput = () => {
                    className="title"
                    value={newSong.title}
                    onChange={handleInputChange} />
-            <textarea id="lyrics" cols="60" rows="25" value={newSong.lyrics} onChange={handleInputChange}>
+            <textarea id="lyrics" cols="75" rows="25" value={newSong.lyrics} onChange={handleInputChange}>
 
             </textarea>
             <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/")}>Scrap It</button>
