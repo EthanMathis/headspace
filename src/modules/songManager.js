@@ -22,7 +22,7 @@ export const getSongById = (songId) => {
 }
 
 export const updateSong = (songObj) => {
-    return fetch(`${url}/songs/${songObj.id}`, {
+    return fetch(`${url}/songs/${songObj.id}?_expand=user`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

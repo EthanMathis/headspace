@@ -27,7 +27,7 @@ export const acceptUserSong = (userSongObj) => {
     return fetch(`${url}/userSongs/${userSongObj.id}`, {
         method: "PUT",
         headers: {
-            "Content-Type": "applecation/json"
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(userSongObj)
     }).then(response => response.json())
