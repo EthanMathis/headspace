@@ -19,6 +19,21 @@
       "email": "louis@me.com",
       "name": "Louis Cato",
       "id": 4
+    },
+    {
+      "email": "tracy@me.com",
+      "name": "Tracy Chapman",
+      "id": 5
+    },
+    {
+      "email": "bryan@me.com",
+      "name": "Bryan JokeFace",
+      "id": 6
+    },
+    {
+      "email": "hunter@me.com",
+      "name": "Hunter Preast",
+      "id": 7
     }
   ],
   "friends": [
@@ -48,9 +63,19 @@
       "id": 5
     },
     {
-      "userId": 3,
-      "friendId": 2,
+      "currentUserId": 1,
+      "userId": 5,
       "id": 6
+    },
+    {
+      "currentUserId": 1,
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "currentUserId": 7,
+      "userId": 1,
+      "id": 8
     }
   ],
   "songs": [
@@ -61,10 +86,22 @@
       "lyrics": " [Verse 1]\nD/F#  G     G      D/F#  A\nShe's a good  girl, loves  her   mama.\n      D/F# G       G    D/F#  A\nLoves Je- sus, and America    too.\n       D/F#  G     G      D/F#  A\nShes a good  girl, crazy 'bout  Elvis\n      D/F# G            G   D/F#   A\nLoves hor- ses, and her boy-friend too, yeah yeah.\n\n[Verse 2]\n       D/F#  G   G      D/F#  A\nIt's a long  day living in    Reseda.\n          D/F#  G   G       D/F#        A\nThere's a free- way runnin' through the yard.\n      D/F#  G            G     D/F#  A\nI'm a bad   boy 'cause I don't even  miss her.\n      D/F#  G       G        D/F#  A\nI'm a bad   boy for breakin' her   heart.\n\n[Chorus]\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'"
     },
     {
+      "id": 4,
       "userId": 2,
       "title": "Yard Man",
-      "lyrics": "[intro]\nD      D      D     B/D       C/D x2\n[VERSE]\nD\nI wake up early and I load the truck, \n                         B/D     C/D\nI grab a biscuit while I gas her up\nD\nEvery morning it's the same old thing \n                       B/D      C/D\njust another day of living the dream\nD\nOf a YARDMAN\n\nD\nI start my morning on the bankers lawn,\n                               B/D     C/D\nIt's kind of funny because I'm overdrawn\nD\nI know he's sitting on bail out bones \n                                   B/D    C/D\nyou know old pinstripes ought to float a loan\n       D\nTo the YARDMAN \n\n[CHORUS] \nG               F                            D\nThat Briggs and Stratton is ringing in my ears\nG                       F                  D\nI've been walking that dog for nearly 15 years\nG        F                     D\nWorking long so I can pay my bills\nG            F                      A\nBreaking my back on country club Hills\n\n[VERSE]\nD\nDriving up to the mansion on the hill\n                     B/D          C/D\ngoing to work now to mow for old Bill    \nD                            \nHis daughters been looking my way \n                               B/D          C/D\nbut you can't shop rodeo on a working man's pay\nD\nI'm the yard man\n\n[REPEAT CHORUS]\n\n[VERSE]\nD\nJohn Deere called just the other day, \n                                  B/D   C/D\ntime to get that tractor out of layaway\nD\nBut I'm so tired of working for the man\n                                       B/D       C/D\nI think I'll move to the beach now, and mow the sand… \n         D\nI'm  the yard man\n\n[CHORUS]\n\n[OUTRO - SPOKEN]\nD\nGonna grab my darlin and ditch this ho\nD                             B/D      C/D\nTrade this weed wacker for a fishing pole\n",
-      "id": 4
+      "lyrics": "[intro]\nD      D      D     B/D       C/D x2\n[VERSE]\nD\nI wake up early and I load the truck, \n                         B/D     C/D\nI grab a biscuit while I gas her up\nD\nEvery morning it's the same old thing \n                       B/D      C/D\njust another day of living the dream\nD\nOf a YARDMAN\n\nD\nI start my morning on the bankers lawn,\n                               B/D     C/D\nIt's kind of funny because I'm overdrawn\nD\nI know he's sitting on bail out bones \n                                   B/D    C/D\nyou know old pinstripes ought to float a loan\n       D\nTo the YARDMAN \n\n[CHORUS] \nG               F                            D\nThat Briggs and Stratton is ringing in my ears\nG                       F                  D\nI've been walking that dog for nearly 15 years\nG        F                     D\nWorking long so I can pay my bills\nG            F                      A\nBreaking my back on country club Hills\n\n[VERSE]\nD\nDriving up to the mansion on the hill\n                     B/D          C/D\ngoing to work now to mow for old Bill    \nD                            \nHis daughters been looking my way \n                               B/D          C/D\nbut you can't shop rodeo on a working man's pay\nD\nI'm the yard man\n\n[REPEAT CHORUS]\n\n[VERSE]\nD\nJohn Deere called just the other day, \n                                  B/D   C/D\ntime to get that tractor out of layaway\nD\nBut I'm so tired of working for the man\n                                       B/D       C/D\nI think I'll move to the beach now, and mow the sand… \n         D\nI'm  the yard man\n\n[CHORUS]\n\n[OUTRO - SPOKEN]\nD\nGonna grab my darlin and ditch this ho\nD                             B/D      C/D\nTrade this weed wacker for a fishing pole\n"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "title": "Give Me One Reason",
+      "lyrics": "Capo II *\n\nE A B7 E\n\nE                              A          B7               E    E7 E\nGive me one reason to stay here, and I'll turn right back around\nA                              A7         B7               E   E7 E\nGive me one reason to stay here, and I'll turn right back around\n          B7\nBecause I don't want leave you lonely\n    A                            E    E7 E\nBut you got to make me change my mind\n\nE                      A      B7                E    E7 E\nBaby I got your number, and I know that you got mine\n    A                         A7   B7              E   E7 E\nBut you know that I called you, I  called too many times\n        B7                   A\nYou can call me baby you can call me anytime\n               E       E7 E\nBut you got to call me\n\nE                              A           B7               E    E7 E\nGive me one reason to stay here - and I'll turn right back around\nA                              A7          B7               E   E7 E\nGive me one reason to stay here - and I'll turn right back around\n          B7\nBecause I don't want leave you lonely\n    A                            E    E7 E\nBut you got to make me change my mind\n\n  E                              A             B7           E    E7 E\nI don't want no one to squeeze me - they might take away my life\n  A                              A7            B7           E   E7 E\nI don't want no one to squeeze me - they might take away my life\n       B7                     A                        E    E7 E\nI just want someone to hold me and rock me through the night\n\nBreak\n\n     E                           A    B7                E    E7 E\nThis youthful heart can love you, and give you what you need\n     A                          A7    B7                E   E7 E\nThis youthful heart can love you, and give you what you need\n            B7                           A\nBut I'm too old to go chasing you around\n                        E  E7 E\nWasting my precious energy\n\nE                              A           B7               E    E7 E\nGive me one reason to stay here - and I'll turn right back around\nA                              A7          B7               E   E7 E\nGive me one reason to stay here - and I'll turn right back around\n          B7\nBecause I don't want leave you lonely\n    A                            E    E7 E\nBut you got to make me change my mind\n\nE                            A         B7              E    E7 E\nBaby just give me one reason - Give me just one reason why\nA                            A7        B7                           E   E7 E\nBaby just give me one reason - Give me just one reason why I should stay\n          B7                        A\nBecause I told you that I loved you\n                           E    E7 A A7 E\nAnd there ain't no more to say"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "title": "Cleanin My Desk",
+      "lyrics": "G                    C\nWoke up this mornin, feeling fine\nD                  Am\nThen I saw my desk\nG                    C\nSo I smashed it with a hammer\nD                  Am\nAnd got some coffee "
     }
   ],
   "userSongs": [
@@ -72,6 +109,18 @@
       "id": 2,
       "songId": 1,
       "userId": 2,
+      "canEdit": true
+    },
+    {
+      "id": 5,
+      "songId": 6,
+      "userId": 1,
+      "canEdit": true
+    },
+    {
+      "id": 6,
+      "songId": 5,
+      "userId": 1,
       "canEdit": true
     }
   ]
