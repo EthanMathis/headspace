@@ -20,7 +20,6 @@ export const MySongView = () => {
         const currentSongId = parseInt(songId)
         getUserSongsBySongId(currentSongId)
         .then(response => {
-            // console.log("getUserSongsBySongId", response)
            return setCollabRequest(response)
         })
     }
@@ -31,7 +30,6 @@ export const MySongView = () => {
     }
 
     const handleCollabApprove = (collabRequest) => {
-        console.log("collabReq", collabRequest)
         const newUserSong = {
             id: collabRequest.id,
             songId: collabRequest.songId,
