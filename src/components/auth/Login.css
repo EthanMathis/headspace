@@ -76,3 +76,8 @@ fieldset {
   .form--login {
     color: whitesmoke;
   }
+
+  .form--login > fieldset > input[type="email"] {
+      width: 25em;
+  }
+

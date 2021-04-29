@@ -1,20 +1,36 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { getSongById } from '../../modules/songManager';
-import { addUserSong } from "../../modules/userSongManager";
+import { addUserSong, getUserSongsBySongId } from "../../modules/userSongManager";
 
 
 export const FriendSongView = () => {
+    const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
+
     const [friendSong, setFriendSong] = useState({})
     const { songId } = useParams()
     const [isPending, setIsPending] = useState(false)
+    const [canEdit, setCanEdit] = useState({})
 
-    const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
+    const canYouEdit = () => {
+        return getUserSongsBySongId(songId)
+        .then(response => {
+            setCanEdit(response.find(request => request.userId === loggedInUser))
+        })
+        .then(() => {
+            if(canEdit == undefined) {
+                setIsPending(false)
+            } else {
+                // console.log(canEdit)
+                setIsPending(true)
+            }
+        })
+    } 
+
 
     const getFriendSong = () => {
         getSongById(songId)
         .then(response => {
-            console.log(response)
            return setFriendSong(response)
         })
     }
@@ -32,6 +48,10 @@ export const FriendSongView = () => {
 
     useEffect(() => {
         getFriendSong()
+    }, [])
+
+    useEffect(() => {
+        canYouEdit()
     }, [])
 
     return (
