@@ -39,6 +39,11 @@
       "email": "brenda@me.com",
       "name": "Brenda Long",
       "id": 8
+    },
+    {
+      "email": "preston@me.com",
+      "name": "Preston Shotts",
+      "id": 9
     }
   ],
   "friends": [
@@ -81,6 +86,11 @@
       "currentUserId": 8,
       "userId": 1,
       "id": 9
+    },
+    {
+      "currentUserId": 9,
+      "userId": 1,
+      "id": 10
     }
   ],
   "songs": [
@@ -113,6 +123,12 @@
       "title": "New Song",
       "lyrics": "G         C                Am\nnew new new new new freshness",
       "id": 7
+    },
+    {
+      "userId": 9,
+      "title": "Trash Man",
+      "lyrics": "Dm      Bb        F           Am7\nI'm the trash man Yeeeeeeeah\nDm        Bb             F                Am7\nI pick up all the trash. Sometimes I find cool stuff",
+      "id": 8
     }
   ],
   "userSongs": [
@@ -132,6 +148,12 @@
       "id": 7,
       "songId": 5,
       "userId": 1,
+      "canEdit": true
+    },
+    {
+      "id": 8,
+      "songId": 1,
+      "userId": 9,
       "canEdit": true
     }
   ],

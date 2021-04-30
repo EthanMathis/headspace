@@ -11,12 +11,14 @@ export const FriendSongView = () => {
     const [friendSong, setFriendSong] = useState({})
     const { songId } = useParams()
     const [isPending, setIsPending] = useState(false)
+    const [canEdit, setCanEdit] = useState({})
 
     
     const canYouEdit = () => {
         return getUserSongsBySongId(songId)
         .then(response => {
             let activeUserRequest = response.find(request => request.userId === loggedInUser)
+            setCanEdit(activeUserRequest)
             activeUserRequest == undefined ? setIsPending(false) : setIsPending(true)
             })
     } 
@@ -56,9 +58,11 @@ export const FriendSongView = () => {
             {/* <h4>Written By: {friendSong.user.name}</h4> */}
             <pre>{friendSong.lyrics}</pre>
         </section>
+        {canEdit?.canEdit && 
         <section className="messageBoard">
             <MessageList />
         </section>
+        }
         </>
     )
 }
