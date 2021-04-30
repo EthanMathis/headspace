@@ -18,7 +18,7 @@ export const FriendsList = () => {
     const getLoggedInUserFriends = () => {
         return getUserFriends(loggedInUser)
         .then(friendsFromAPI => {
-            // console.log("friends from API", friendsFromAPI)
+            console.log("friends from API", friendsFromAPI)
             setFriends(friendsFromAPI)
         })
     }
@@ -53,6 +53,10 @@ export const FriendsList = () => {
                         return true
                     }
                 })
+                // console.log("matching users", matchingUsers)
+                // let notFriends = matchingUsers.map(user => {
+                //     friends.filter(friend => friend.userId !== user.id)
+                // })
                 setResult(matchingUsers)
             })
         }

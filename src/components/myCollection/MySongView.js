@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { getSongById } from '../../modules/songManager';
 import { denyUserSong, acceptUserSong ,getUserSongsBySongId } from "../../modules/userSongManager";
+import { MessageList } from "../messages/MessageList";
 import { CollabRequestCard } from "./CollabRequestCard";
 
 export const MySongView = () => {
@@ -49,6 +50,7 @@ export const MySongView = () => {
     }, [])
 
     return (
+        <>
         <section className="mySongCard">
             {collabRequest.length > 0 ?
             collabRequest.map(request =>
@@ -60,5 +62,9 @@ export const MySongView = () => {
             <h2>{mySong.title}</h2>
             <pre>{mySong.lyrics}</pre>
         </section>
+        <section className="messageBoard">
+                <MessageList />
+        </section>
+        </>
     )
 }
