@@ -34,6 +34,11 @@
       "email": "hunter@me.com",
       "name": "Hunter Preast",
       "id": 7
+    },
+    {
+      "email": "brenda@me.com",
+      "name": "Brenda Long",
+      "id": 8
     }
   ],
   "friends": [
@@ -46,11 +51,6 @@
       "id": 2,
       "currentUserId": 2,
       "userId": 1
-    },
-    {
-      "id": 3,
-      "currentUserId": 1,
-      "userId": 3
     },
     {
       "id": 4,
@@ -76,6 +76,11 @@
       "currentUserId": 7,
       "userId": 1,
       "id": 8
+    },
+    {
+      "currentUserId": 8,
+      "userId": 1,
+      "id": 9
     }
   ],
   "songs": [
@@ -101,7 +106,13 @@
       "id": 6,
       "userId": 6,
       "title": "Cleanin My Desk",
-      "lyrics": "G                    C\nWoke up this mornin, feeling fine\nD                  Am\nThen I saw my desk\nG                    C\nSo I smashed it with a hammer\nD                  Am\nAnd got some coffee "
+      "lyrics": "G                    C\nWoke up this mornin, feeling fine\nD                  Am\nThen I saw my desk\nG                    C\nSo I smashed it with a hammer\nD                  Am\nAnd got some coffee \n\nedit test"
+    },
+    {
+      "userId": 8,
+      "title": "New Song",
+      "lyrics": "G         C                Am\nnew new new new new freshness",
+      "id": 7
     }
   ],
   "userSongs": [
@@ -118,10 +129,24 @@
       "canEdit": true
     },
     {
-      "id": 6,
+      "id": 7,
       "songId": 5,
       "userId": 1,
       "canEdit": true
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "songId": 1,
+      "userId": 2,
+      "message": "Hey man! I really love this song. I'm going to work on the second verse."
+    },
+    {
+      "id": 2,
+      "songId": 1,
+      "userId": 1,
+      "message": "Thanks! I can't wait to see what you come up with."
     }
   ]
 }

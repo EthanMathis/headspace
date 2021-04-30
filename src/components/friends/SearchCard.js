@@ -1,13 +1,7 @@
 import React from "react"
 
-export const SearchCard = ({result, friend, handleAddFriend}) => {
+export const SearchCard = ({result, handleAddFriend}) => {
     
-    // let isNotFriends = friends.filter(friend => {
-    //     if(friend.user.id !== result.id) {
-    //         return true
-    //     }
-    // })
-    // console.log("isNotFriends", isNotFriends)
     return (
         <article className="friendSearch">
            <>

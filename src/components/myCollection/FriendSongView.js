@@ -10,21 +10,14 @@ export const FriendSongView = () => {
     const [friendSong, setFriendSong] = useState({})
     const { songId } = useParams()
     const [isPending, setIsPending] = useState(false)
-    const [canEdit, setCanEdit] = useState({})
 
+    
     const canYouEdit = () => {
         return getUserSongsBySongId(songId)
         .then(response => {
-            setCanEdit(response.find(request => request.userId === loggedInUser))
-        })
-        .then(() => {
-            if(canEdit == undefined) {
-                setIsPending(false)
-            } else {
-                // console.log(canEdit)
-                setIsPending(true)
-            }
-        })
+            let activeUserRequest = response.find(request => request.userId === loggedInUser)
+            activeUserRequest == undefined ? setIsPending(false) : setIsPending(true)
+            })
     } 
 
 
