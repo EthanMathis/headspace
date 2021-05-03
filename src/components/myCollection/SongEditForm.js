@@ -58,6 +58,7 @@ export const SongEditForm = () => {
                     className="btn btn-outline-success" 
                     disabled={isLoading} 
                     onClick={handleSaveEdit}>Save It</button>
+            <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/")}>Scrap It</button>
         </div>
     )
 }

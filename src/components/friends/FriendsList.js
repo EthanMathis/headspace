@@ -7,8 +7,11 @@ import { getAllUsers } from "../../modules/userManager";
 export const FriendsList = () => {
 
     const [friends, setFriends] = useState([]);
+    const [allUsers, setAllUsers] = useState([]);
     const [search, setSearch] = useState("");
-    const [result, setResult] = useState([])
+    const [result, setResult] = useState([]);
+    const [friendsObj, setFriendsObj] = useState([])
+    const [allUsersNotFriends, setAllUsersNotFriends] = useState([])
 
     // grabs the userId of the currently logged in user. returns as an integer
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
@@ -19,8 +22,17 @@ export const FriendsList = () => {
         return getUserFriends(loggedInUser)
         .then(friendsFromAPI => {
             console.log("friends from API", friendsFromAPI)
+            let friendsUserObj = friendsFromAPI.map(friend => friend.user)
+            setFriendsObj(friendsUserObj)
             setFriends(friendsFromAPI)
         })
+    }
+
+    const getAllTheUsers = () => {
+        getAllUsers()
+        .then(response => { 
+            console.log("allTheUser", response)
+            return setAllUsers(response)})
     }
 
     // handles deleting a friend by Id. RESETS STATE OF FRIENDS TO RENDER THE LIST AGAIN
@@ -46,21 +58,29 @@ export const FriendsList = () => {
 
     const searchResult = (searchString) => {
         if(searchString.length > 0) {
-            getAllUsers()
-            .then(response => {
-                let matchingUsers = response.filter(user => {
+                let matchingUsers = allUsersNotFriends.filter(user => {
                     if(user.name.toLowerCase().includes(searchString) && user.id !== loggedInUser) {
                         return true
                     }
                 })
-                // console.log("matching users", matchingUsers)
-                // let notFriends = matchingUsers.map(user => {
-                //     friends.filter(friend => friend.userId !== user.id)
-                // })
                 setResult(matchingUsers)
-            })
+            
         }
         else setResult([])
+    }
+
+    const notFriends = () => {
+        let notMyFriends = [...allUsers]
+
+        for (var i = 0, len = friendsObj.length; i < len; i++) { 
+            for (var j = 0, len2 = notMyFriends.length; j < len2; j++) { 
+                if (friendsObj[i].id === notMyFriends[j].id) {
+                    notMyFriends.splice(j, 1);
+                    len2=notMyFriends.length;
+                }
+            }
+        } 
+        return setAllUsersNotFriends(notMyFriends) 
     }
 
     useEffect(() => {
@@ -68,7 +88,9 @@ export const FriendsList = () => {
     }, [search])
 
     useEffect(() => {
+        getAllTheUsers()
         getLoggedInUserFriends()
+        notFriends()
     }, [])
 
 
@@ -82,7 +104,7 @@ export const FriendsList = () => {
                        onChange={handleInputChange}
                        placeholder="Search For a Friend" />
 
-                <div className="searchResults">
+                <div className="d-flex flex-column align-items-center">
                     {result.length === 0 ? <div></div> :
                      result.map(result => 
                         <SearchCard key={result.id}
@@ -93,7 +115,7 @@ export const FriendsList = () => {
                 </div>
             </div>
 
-            <div className="FriendCards">
+            <div className="d-flex justify-content-center">
                 {friends.map(friend => 
                     <FriendCard key={friend.id}
                                 friend={friend}

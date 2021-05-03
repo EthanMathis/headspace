@@ -57,6 +57,7 @@ export const FriendSongEditForm = () => {
                     className="btn btn-outline-success" 
                     disabled={isLoading} 
                     onClick={handleSaveEdit}>Save It</button>
+                    <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/friends")}>Scrap It</button>
         </div>
     )
 }
