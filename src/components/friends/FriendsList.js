@@ -56,6 +56,7 @@ export const FriendsList = () => {
                     return true
                 }
             })
+            
             setResult(matchingUsers)
 
         }
@@ -83,16 +84,21 @@ export const FriendsList = () => {
         setSearch(selectedVal.toLowerCase())
     }
 
-    useEffect(() => {
-        searchResult(search)
-    }, [search])
-
+    
     useEffect(() => {
         getAllTheUsers()
         getLoggedInUserFriends()
-        notFriends()
+        // notFriends()
     }, [])
+    
+    // useEffect(() => {
+    //     getLoggedInUserFriends()
+    // }, [])
 
+    useEffect(() => {
+        searchResult(search)
+        notFriends()
+    }, [search])
 
     return (
         <section className="friendList">
