@@ -21,16 +21,18 @@ export const FriendSongCard = ({song}) => {
     }, [])
 
     return (
-        <article className="friendSongCard">
+        <article className="border border-info rounded m-2 p-2 w-25 mx-auto">
             <h3>{song.title}</h3>
             <h4>Written By: {song.user.name}</h4>
-            <Link to={`/friendSong/${song.id}`}>
-                <button type="button" className="btn btn-outline-warning">View</button>
-            </Link>
-            {canEdit?.canEdit &&  
-            <Link to={`/friendSong/${song.id}/edit`}>
-            <button type="button" className="btn btn-outline-primary">Edit</button>
-            </Link>}
+                <div className="text-center">
+                    <Link to={`/friendSong/${song.id}`}>
+                        <button type="button" className="btn btn-outline-warning">View</button>
+                    </Link>
+                    {canEdit?.canEdit &&  
+                    <Link to={`/friendSong/${song.id}/edit`}>
+                    <button type="button" className="btn btn-outline-primary">Edit</button>
+                    </Link>}
+                </div>
             
         </article>
     )

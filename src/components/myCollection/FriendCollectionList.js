@@ -17,7 +17,7 @@ export const FriendCollection = () => {
     }, [])
 
     return (
-        <section className="friendSongList">
+        <section className="d-flex flex-column">
             <div className="songCard">
                 {songs.map(song => 
                     <FriendSongCard key={song.id}

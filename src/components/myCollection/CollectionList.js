@@ -25,16 +25,18 @@ export const MyCollection = () => {
     }, [])
     
    return (
-   <section className="songList">
-        <div className="SongCards">
+   <section className="d-flex flex-column">
+       <div className="d-flex mx-auto m-2 p-1">
+            <Link to={`/song/createSong`}>
+                <button type="button" className="btn btn-success">Create New Song</button>
+            </Link>
+       </div>
+        <div className="d-flex flex-column mx-auto text-center">
             {songs.map(song =>
                 <SongCard key={song.id}
                           song={song}
                           handleDelete={handleDelete} /> )}
         </div>
-        <Link to={`/song/createSong`}>
-            <button type="button" className="btn btn-success">Create New Song</button>
-        </Link>
     </section>
    )
 }

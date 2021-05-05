@@ -50,21 +50,23 @@ export const MySongView = () => {
     }, [])
 
     return (
-        <>
-        <section className="mySongCard">
+        <div className="d-flex flex-row justify-content-around">
+            <div className="col-sm border border-info rounded float-left m-2 p-2">
+                <h2 className="text-center">{mySong.title}</h2>
+                <pre>{mySong.lyrics}</pre>
+            </div>     
+        <section className="col-sm align-self-start">
             {collabRequest.length > 0 ?
             collabRequest.map(request =>
                 <CollabRequestCard key={request.id}
                                    collabRequest={request}
                                    handleCollabDeny={handleCollabDeny}
                                    handleCollabApprove={handleCollabApprove} />) : null}
-                 
-            <h2>{mySong.title}</h2>
-            <pre>{mySong.lyrics}</pre>
         </section>
-        <section className="messageBoard">
+        <section className="col-sm border border-info rounded float-right m-2 p-2">
+            <h2 className="text-center">Message Board</h2>
                 <MessageList />
         </section>
-        </>
+        </div>
     )
 }

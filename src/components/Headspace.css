@@ -1,0 +1,15 @@
+body {
+    background-color: #252829 !important;
+    color: white !important;
+}
+
+textarea {
+    background-color: #151516 !important;
+    color: white !important;
+    resize: both !important;
+}
+
+pre {
+    background-color: #151516 !important;
+    color: white !important;
+}
