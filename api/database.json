@@ -44,6 +44,11 @@
       "email": "preston@me.com",
       "name": "Preston Shotts",
       "id": 9
+    },
+    {
+      "email": "michelle@me.com",
+      "name": "Michelle Granger",
+      "id": 10
     }
   ],
   "friends": [
@@ -91,6 +96,16 @@
       "currentUserId": 9,
       "userId": 1,
       "id": 10
+    },
+    {
+      "currentUserId": 10,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "currentUserId": 1,
+      "userId": 10,
+      "id": 12
     }
   ],
   "songs": [
@@ -129,6 +144,24 @@
       "title": "Trash Man",
       "lyrics": "Dm      Bb        F           Am7\nI'm the trash man Yeeeeeeeah\nDm        Bb             F                Am7\nI pick up all the trash. Sometimes I find cool stuff",
       "id": 8
+    },
+    {
+      "userId": 2,
+      "title": "Don't Ask Me No Questions",
+      "lyrics": "INTRO- G D C G,  THEN- C D G\nVERSE 1\nC                        D          G\nNow, every time that I come home nobody wants to let me be.\nC                    D                    G\nSeems that all the friends I've got just got to come interrogate me.\nC             D                   Em                           C\nWell, I appreciate your feelings, and I don't want to pass you by,\nG             D                           C                G\nBut I don't ask you about your business. Don't ask me about mine.\nVERSE 2\nC                      D                                 G\nWell, it's true I love the money, and I love my brand new car.\nC                          D                              G\nI like drinkin' the best of whiskey and playin' in a honky-tonk bar.\nC           D            Em         C\nBut when I come off the road, well I just got to have my time,\nG           D            C             G\nCause I've got to find a break in this action, else I'm gonna lose my mind.\n \nCHORUS\n     G              D             C               G\nSo don't ask me no questions And I won't tell you no lies.\n  G          D          C          G\nDon't ask me about my business, And I won't tell you goodbye.\n \nSOLO BREAK- Same chords as verse\n \nVERSE 3\n \n'What's your color? Do you dig the brothers?\" is driving me up the wall,\nAnd every time I think that I can sleep, some fool has got to call.\nWell, don't you think that when I come home I just want a little piece of mind?\nIf you want to talk about this business, buddy, you're just wasting time.\n \nCHORUS\nSo don't ask me no questions And I won't tell you no lies.\ndon't ask me about my business, And I won't tell you goodbye.\nI said don't ask no stupid questions And I won't send you away.\nIf you want to talk fishin', Well I guess that'll be OK.",
+      "id": 9
+    },
+    {
+      "userId": 10,
+      "title": "Perfect",
+      "lyrics": "[Intro]\nG\n \n[Verse 1]\n          G        Em\nI found a love for me\n              C                            D\nDarling, just dive right in, and follow my lead\n                G          Em\nWell, I found a girl beautiful and sweet\n        C                                     D\nI never knew you were the someone waiting for me\n \n[Pre-Chorus]\n                                G\nCause we were just kids when we fell in love\n            Em                      C                G  D\nNot knowing what it was, I will not give you up this ti-ime\n             G                           Em\nDarling just kiss me slow, your heart is all I own\n            C                     D\nAnd in your eyes you're holding mine\n \n[Chorus]\n      Em   C             G          D              Em\nBaby, I'm dancing in the dark, with you between my arms\nC                G     D                Em\nBarefoot on the grass, listening to our favourite song\n          C                G                 D              Em\nWhen you said you looked a mess, I whispered underneath my breath\n         C                G        D             G\nBut you heard it, darling you look perfect tonight\n \n| G D/F# Em D | C  D  |\n \n[Verse 2]\n                G                    Em\nWell, I found a woman, stronger than anyone I know\n              C                                          D\nShe shares my dreams, I hope that someday I'll share her home\n           G             Em\nI found a love, to carry more than just my secrets\n         C                              D\nTo carry love, to carry children of our own\n \n[Pre-Chorus]\n                             G                     Em\nWe are still kids, but we're so in love, fighting against all odds\n             C               G  D\nI know we'll be alright this ti-ime\n             G                              Em\nDarling just hold my hand, be my girl, I'll be your man\n         C               D\nI see my future in your eyes\n \n[Chorus]\n      Em   C              G         D              Em\nBaby, I'm dancing in the dark, with you between my arms\nC                G     D                Em\nBarefoot on the grass, listening to our favourite song\n        C                G                D\nWhen I saw you in that dress, looking so beautiful\n  Em       C                  G        D          [ G ]\nI don't deserve this, darling you look perfect tonight\n \n[Interlude]\n| G  | % | Em | % |\n| C  | % | D  | % |\n \n[Chorus]\n      Em   C              G         D              Em\nBaby, I'm dancing in the dark, with you between my arms\nC                G     D                Em\nBarefoot on the grass, listening to our favourite song\n        C              G               D             Em\nI have faith in what I see, now I know I have met an angel\n    C          G         D\nIn person, and she looks perfect\n \n[Outro]\n  G/B     C           Dsus4    D        [ G ]\nI don't deserve this, you look perfect tonight\n \n| G D/F# Em D | C  D  | G",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "title": "Make It Rain",
+      "lyrics": "[Intro]\nAm Em B7 Em\nAm Em B7 Em\n \n \n[Verse 1]\nAm                 Em\n  When the sins of my father\nB7              Em\n  Weigh down in my soul\nAm             Em\n  And the pain of my mother\nB7                Em\n  Will not let me go\nAm                           Em\n  Well I know there can come fire from the sky\nB7                            Em\n  To refine the purest of kings\nAm                            Em\n  And even though I know this fire brings me pain\nB7                     Em\n  Even so and just the same\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n            Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Verse 2]\nAm                       Em\n  And the seed needs the water\nB7                           Em\n  Before it grows out of the ground\nAm                             Em\n  But it just keeps on getting hotter\nB7                       Em\n  And the hunger more profound\nAm                           Em\n  Well I know there can come tears from the eyes\nB7                               Em\n  But they may as well all be in vain\nAm                        Em\n  Even though I know this tears come with pain\nB7                      Em\n  Even so and just the same\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Guitar Solo]\nAm Em B7 Em\nAm Em B7 Em\n \n**I have no idea of the actual tab, plus I play acoustic so it likely won't be right if I tried to figure it\nout for you guys*\n \n \n[Verse 3]\nAm                         Em\n  And the seas are full of water\nB7                 Em\n  That stop by the shore\nAm                        Em\n  Just like the riches of grandeur\nB7                     Em\n  That never reach the poor\nAm                              Em\n  So let the clouds fill with thunderous applause\nB7                      Em\n  And let lightning be the veins\nAm                      Em\n  And fill the sky with all that they can drop\nB7                           Em\n  When it's time to make a change \n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain\n        B7\nMake it rain\n        Em\nMake it rain\n        Am\nMake it rain\n        Em\nMake it rain\n        B7\nMake it rain\n        Em\nOh, make it rain",
+      "id": 11
     }
   ],
   "userSongs": [
@@ -155,6 +188,24 @@
       "songId": 1,
       "userId": 9,
       "canEdit": true
+    },
+    {
+      "songId": 4,
+      "userId": 1,
+      "canEdit": false,
+      "id": 9
+    },
+    {
+      "id": 10,
+      "songId": 10,
+      "userId": 1,
+      "canEdit": true
+    },
+    {
+      "songId": 1,
+      "userId": 10,
+      "canEdit": false,
+      "id": 11
     }
   ],
   "messages": [
@@ -169,6 +220,24 @@
       "songId": 1,
       "userId": 1,
       "message": "Thanks! I can't wait to see what you come up with."
+    },
+    {
+      "songId": 1,
+      "userId": 1,
+      "message": "so I've been working on a guitar solo for this song. I really dig it",
+      "id": 3
+    },
+    {
+      "songId": 10,
+      "userId": 10,
+      "message": "looking forward to that guitar stuff you were talking about",
+      "id": 4
+    },
+    {
+      "songId": 10,
+      "userId": 1,
+      "message": "yeah I'll work on it this weekend and probably throw it up on Sunday",
+      "id": 5
     }
   ]
 }

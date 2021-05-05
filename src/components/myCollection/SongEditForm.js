@@ -46,7 +46,7 @@ export const SongEditForm = () => {
     }, [])
 
     return (
-        <div className="songEditForm">
+        <div className="d-flex">
 
             <textarea id="lyrics" 
                       cols="75" 
@@ -54,11 +54,13 @@ export const SongEditForm = () => {
                       value={editSong.lyrics} 
                       onChange={handleInputChange}>
             </textarea>
-            <button type="button" 
-                    className="btn btn-outline-success" 
-                    disabled={isLoading} 
-                    onClick={handleSaveEdit}>Save It</button>
-            <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/")}>Scrap It</button>
+            <div className="d-flex flex-column align-self-center mx-auto w-25">
+                <button type="button" 
+                        className="btn btn-outline-success p-2 m-2" 
+                        disabled={isLoading} 
+                        onClick={handleSaveEdit}>Save It</button>
+                <button type="button" className="btn btn-outline-danger p-2 m-2" onClick={() => history.push("/")}>Scrap It</button>
+            </div>
         </div>
     )
 }

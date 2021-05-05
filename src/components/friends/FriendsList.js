@@ -101,7 +101,7 @@ export const FriendsList = () => {
     }, [search])
 
     return (
-        <section className="friendList">
+        <section className="d-flex flex-column">
             <div className="searchBox">
                 <input type="text"
                     id="search"
@@ -110,7 +110,7 @@ export const FriendsList = () => {
                     onChange={handleInputChange}
                     placeholder="Search For a Friend" />
 
-                <div className="d-flex flex-column align-items-center">
+                <div className="d-flex flex-column">
                     {result.length === 0 ? <div></div> :
                         result.map(result =>
                             <SearchCard key={result.id}
@@ -121,7 +121,7 @@ export const FriendsList = () => {
                 </div>
             </div>
 
-            <div className="d-flex justify-content-center">
+            <div className="d-flex flex-column mx-auto">
                 {friends.map(friend =>
                     <FriendCard key={friend.id}
                         friend={friend}

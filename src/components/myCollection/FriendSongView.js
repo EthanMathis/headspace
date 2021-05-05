@@ -51,18 +51,21 @@ export const FriendSongView = () => {
     }, [])
 
     return (
-        <>
-        <section className="friendSongCard">
+        <div>
             <button type="button" className="btn btn-outline-info" disabled={isPending} onClick={handleRequest}>Request Collaboration</button>
-            <h2>{friendSong.title}</h2>
-            {/* <h4>Written By: {friendSong.user.name}</h4> */}
-            <pre>{friendSong.lyrics}</pre>
-        </section>
-        {canEdit?.canEdit && 
-        <section className="messageBoard">
-            <MessageList />
-        </section>
-        }
-        </>
+            <div className="d-flex justify-content-around">
+                <section>
+                    <div  className="border border-info rounded m-2 p-2">
+                        <h2>{friendSong.title}</h2>
+                        {/* <h4>Written By: {friendSong.user.name}</h4> */}
+                        <pre>{friendSong.lyrics}</pre>
+                    </div>
+                </section>
+                {canEdit?.canEdit && 
+                <section className="messageBoard">
+                    <MessageList />
+                </section>}
+            </div>
+        </div>
     )
 }

@@ -39,34 +39,34 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login">
+        <main className="container--login d-flex flex-column align-items-center">
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
-            <section>
+            <section className="formContainer border border-info rounded w-50 text-center mx-auto m-2 p-2">
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Welcome to Headspace</h1>
+                    <h2>Welcome to Headspace</h2>
                     <h2>- A Songwriting Tool For Musicians -</h2>
                     <h2>Sign Up or Log In To Get Started</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             id="email"
-                            className="form-control"
+                            className="form-control mx-auto"
                             placeholder="Email address"
                             required autoFocus
                             value={loginUser.email}
                             onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
-                        <button type="submit">
+                        <button type="submit" className="btn btn-success">
                             Sign in
                         </button>
                     </fieldset>
                 </form>
             </section>
-            <section className="link--register">
+            <section className="link--register text-center">
                 <Link to="/register">Register for an account</Link>
             </section>
         </main>

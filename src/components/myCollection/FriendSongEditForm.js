@@ -45,19 +45,22 @@ export const FriendSongEditForm = () => {
     }, [])
 
     return (
-        <div className="songEditForm">
+        <div className="d-flex">
 
-            <textarea id="lyrics" 
-                      cols="75" 
-                      rows="25" 
-                      value={editFriendSong.lyrics} 
-                      onChange={handleInputChange}>
-            </textarea>
-            <button type="button" 
-                    className="btn btn-outline-success" 
-                    disabled={isLoading} 
-                    onClick={handleSaveEdit}>Save It</button>
-                    <button type="button" className="btn btn-outline-danger" onClick={() => history.push("/friends")}>Scrap It</button>
+                <textarea id="lyrics" 
+                        cols="75" 
+                        rows="25" 
+                        value={editFriendSong.lyrics} 
+                        onChange={handleInputChange}>
+                </textarea>
+            <div className="d-flex flex-column align-self-center mx-auto w-25">
+                <button type="button" 
+                        className="btn btn-outline-success p-2 m-2" 
+                        disabled={isLoading} 
+                        onClick={handleSaveEdit}>Save It</button>
+                        <button type="button" className="btn btn-outline-danger p-2 m-2" onClick={() => history.push("/friends")}>Scrap It</button>
+            </div>
+
         </div>
     )
 }

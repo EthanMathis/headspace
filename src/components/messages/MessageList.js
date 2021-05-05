@@ -50,7 +50,7 @@ export const MessageList = () => {
     }, [])
 
     return (
-        <section className="messagesContainer">
+        <section className="messagesContainer border border-info rounded m-2 p-2">
             {messages.length > 0 &&
             messages.map(message =>
                <MessageCard key={message.id}
