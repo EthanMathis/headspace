@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
+import mainLogo from "../../images/headspaceFullLogoCropped.png"
 
 
 export const Login = () => {
@@ -39,11 +40,12 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login d-flex flex-column align-items-center">
+        <main className="container--login d-flex flex-column align-items-center mt-5">
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
+            <img src={mainLogo} alt="" />
             <section className="formContainer border border-info rounded w-50 text-center mx-auto m-2 p-2">
                 <form className="form--login" onSubmit={handleLogin}>
                     <h2>Welcome to Headspace</h2>
@@ -69,6 +71,7 @@ export const Login = () => {
             <section className="link--register text-center">
                 <Link to="/register">Register for an account</Link>
             </section>
+            
         </main>
     )
 }

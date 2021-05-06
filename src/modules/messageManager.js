@@ -27,3 +27,14 @@ export const deleteMessage = (msgId) => {
     })
     .then(response => response.json())
 }
+
+export const updateMessage = (msgObj) => {
+    return fetch(`${url}/messages/${msgObj.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({message: msgObj.message})
+    })
+    .then(response => response.json())
+}

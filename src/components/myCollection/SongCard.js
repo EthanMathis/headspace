@@ -10,7 +10,7 @@ export const SongCard = ({song, handleDelete}) => {
             <h4>Written By: {song.user.name}</h4>
             <div className="d-flex justify-content-between">
                 <Link to={`/song/${song.id}/view`}>
-                    <button type="button" className="btn btn-warning">View</button>
+                    <button type="button" className="btn btn-info">View</button>
                 </Link>
                 <Link to={`/song/${song.id}/edit`}>
                     <button type="button" className="btn btn-primary">Edit</button>
