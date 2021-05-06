@@ -3,6 +3,7 @@ import { FriendCard } from "./FriendCard"
 import { getUserFriends, addFriend, deleteFriend } from "../../modules/friendsManager"
 import { SearchCard } from "./SearchCard";
 import { getAllUsers } from "../../modules/userManager";
+import { FriendCollection } from "../myCollection/FriendCollectionList";
 
 export const FriendsList = () => {
 
@@ -12,7 +13,7 @@ export const FriendsList = () => {
     const [result, setResult] = useState([]);
     const [friendsObj, setFriendsObj] = useState([])
     const [allUsersNotFriends, setAllUsersNotFriends] = useState([])
-
+    const [friendId, setFriendId] = useState(0)
     // grabs the userId of the currently logged in user. returns as an integer
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
@@ -84,6 +85,10 @@ export const FriendsList = () => {
         setSearch(selectedVal.toLowerCase())
     }
 
+    // const handleViewChange = () => {
+    //     setViewChange(!viewChange)
+    // }
+
     
     useEffect(() => {
         getAllTheUsers()
@@ -101,16 +106,21 @@ export const FriendsList = () => {
     }, [search])
 
     return (
+        <>
+        {friendId === 0 ?
         <section className="d-flex flex-column">
             <div className="searchBox">
-                <input type="text"
-                    id="search"
-                    className="friendSearch"
-                    required
-                    onChange={handleInputChange}
-                    placeholder="Search For a Friend" />
+                <div className="text-center m-2">
+                    <input type="text"
+                        id="search"
+                        className="friendSearch"
+                        required
+                        autoComplete="off"
+                        onChange={handleInputChange}
+                        placeholder="Search For a New Friend" />
+                </div>
 
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-column m-2 p-1">
                     {result.length === 0 ? <div></div> :
                         result.map(result =>
                             <SearchCard key={result.id}
@@ -122,12 +132,16 @@ export const FriendsList = () => {
             </div>
 
             <div className="d-flex flex-column mx-auto">
+                <h2 className="font-weight-bold text-center">Friends List</h2>
                 {friends.map(friend =>
                     <FriendCard key={friend.id}
                         friend={friend}
-                        handleDelete={handleDelete} />
+                        handleDelete={handleDelete}
+                        setFriendId={setFriendId} />
                 )}
             </div>
-        </section>
+        </section> : <FriendCollection friendId={friendId}
+                                       setFriendId={setFriendId} />  }
+        </>
     )
 }

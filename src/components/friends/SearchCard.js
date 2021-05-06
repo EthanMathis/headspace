@@ -3,7 +3,7 @@ import React from "react"
 export const SearchCard = ({result, handleAddFriend}) => {
     
     return (
-        <article className="d-flex">
+        <article className="d-flex mx-auto">
            <>
             <div>
                 <button type="button" className="btn btn-success" onClick={() => handleAddFriend(result.id)}>Add</button>

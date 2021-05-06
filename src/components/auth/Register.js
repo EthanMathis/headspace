@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
+import mainLogo from "../../images/headspaceFullLogoCropped.png"
+
 
 import "./Login.css"
 
@@ -57,18 +59,19 @@ export const Register = () => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main className="m-5 p-2" style={{ textAlign: "center" }}>
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
-
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
+            <img src={mainLogo} alt="" />
+            <form className="form--login d-flex flex-column align-items-center border border-info rounded w-50 mx-auto m-2 p-2" onSubmit={handleRegister}>
+                <h1 className="h3 mb-3 font-weight-normal">Please Register for Headspace</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
+                    
                 </fieldset>
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
@@ -79,7 +82,7 @@ export const Register = () => {
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <button type="submit" className="btn btn-success m-2"> Sign in </button>
                 </fieldset>
             </form>
         </main>
