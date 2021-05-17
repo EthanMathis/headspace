@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Headspace } from './components/Headspace'
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

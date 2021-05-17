@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
+import { MusicPlayer } from "../../firebase/MusicPlayer";
 import { getSongById } from '../../modules/songManager';
 import { addUserSong, getUserSongsBySongId } from "../../modules/userSongManager";
 import { MessageList } from "../messages/MessageList";
@@ -12,6 +13,7 @@ export const FriendSongView = () => {
     const { songId } = useParams()
     const [isPending, setIsPending] = useState(false)
     const [canEdit, setCanEdit] = useState({})
+    const history = useHistory()
 
     
     const canYouEdit = () => {
@@ -52,7 +54,12 @@ export const FriendSongView = () => {
 
     return (
         <div>
-            <button type="button" className="btn btn-outline-info" disabled={isPending} onClick={handleRequest}>Request Collaboration</button>
+
+            <div className="d-flex flex-row justify-content-between m-1 p-1">
+                <button type="button" className="btn btn-info" onClick={() => history.push("/")}>Back</button>
+                <button type="button" className="btn btn-outline-info" disabled={isPending} onClick={handleRequest}>Request Collaboration</button>
+            </div>
+
             <div className="d-flex justify-content-around">
                 <section>
                     <div  className="border border-info rounded m-2 p-2">
@@ -62,9 +69,12 @@ export const FriendSongView = () => {
                     </div>
                 </section>
                 {canEdit?.canEdit && 
+                <div>
+                    <MusicPlayer songId={songId} />
                 <section className="messageBoard">
                     <MessageList />
-                </section>}
+                </section>
+                </div>}
             </div>
         </div>
     )
