@@ -78,11 +78,6 @@
       "id": 6
     },
     {
-      "currentUserId": 1,
-      "userId": 6,
-      "id": 7
-    },
-    {
       "currentUserId": 7,
       "userId": 1,
       "id": 8
@@ -106,6 +101,16 @@
       "currentUserId": 1,
       "userId": 10,
       "id": 12
+    },
+    {
+      "currentUserId": 1,
+      "userId": 7,
+      "id": 13
+    },
+    {
+      "currentUserId": 1,
+      "userId": 8,
+      "id": 15
     }
   ],
   "songs": [
@@ -113,7 +118,7 @@
       "id": 1,
       "userId": 1,
       "title": "Free Fallin",
-      "lyrics": " [Verse 1]\nD/F#  G     G      D/F#  A\nShe's a good  girl, loves  her   mama.\n      D/F# G       G    D/F#  A\nLoves Je- sus, and America    too.\n       D/F#  G     G      D/F#  A\nShes a good  girl, crazy 'bout  Elvis\n      D/F# G            G   D/F#   A\nLoves hor- ses, and her boy-friend too, yeah yeah.\n\n[Verse 2]\n       D/F#  G   G      D/F#  A\nIt's a long  day living in    Reseda.\n          D/F#  G   G       D/F#        A\nThere's a free- way runnin' through the yard.\n      D/F#  G            G     D/F#  A\nI'm a bad   boy 'cause I don't even  miss her.\n      D/F#  G       G        D/F#  A\nI'm a bad   boy for breakin' her   heart.\n\n[Chorus]\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'"
+      "lyrics": " [Verse 1]\nD/F#  G     G      D/F#  A\nShe's a good  girl, loves  her   mama.\n      D/F# G       G    D/F#  A\nLoves Je- sus, and America    too.\n       D/F#  G     G      D/F#  A\nShes a good  girl, crazy 'bout  Elvis\n      D/F# G            G   D/F#   A\nLoves hor- ses, and her boy-friend too, yeah yeah.\n\n[Verse 2]\n       D/F#  G   G      D/F#  A\nIt's a long  day living in    Reseda.\n          D/F#  G   G       D/F#        A\nThere's a free- way runnin' through the yard.\n      D/F#  G            G     D/F#  A\nI'm a bad   boy 'cause I don't even  miss her.\n      D/F#  G       G        D/F#  A\nI'm a bad   boy for breakin' her   heart.\n\n[Chorus]\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n\n[Verse 3]\n        D/F#  G     G       D/F#        A\nAll the vam-  pires walkin' through the valley.\n          D/F#  G       G    D/F#  A\nThey move west  down Ventura Boule-vard.\n            D/F#  G        G        D/F#    A\nAnd all the bad   boys are standing in  the shadows.\n        D/F#  G         G         D/F#   A\nAnd the good  girls are home with broken hearts.\n \n \n[Chorus]\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n \nD/F#  G           G  D/F#  A\nFree  fallin' now.   Free  fallin', now\nD/F#  G           G  D/F#  A\nFree  fallin' now.   Free  fallin', now\nD/F#  G           G  D/F#  A\nFree  fallin' now.   Free  fallin', now\nD/F#  G           G  D/F#  A\nFree  fallin' now.   Free  fallin', now\n \n \n[Verse 4]\n        D/F#  G    G    D/F# A\nI wanna glide down over Mul- holland.\n        D/F#  G        G    D/F#    A\nI wanna write her, her name in  the sky.\n        D/F#  G    G   D/F#  A\nI wanna free  fall out into  nothin'.\n              D/F#  G          G     D/F#  A\nOh, I'm gonna leave this, this world for a while.\n \n \n[Chorus]\n        D/F#  G   G   D/F#   A\nNow I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nNow I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n \n        D/F#  G   G   D/F#   A\nAnd I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n        D/F#  G   G   D/F#   A\nNow I'm free,\n     D/F#     G       G   D/F#   A\nFree fallin', fallin'\n \n  D/F#     G       G   D/F#   A\nFree fallin', fallin'\n  D/F#     G       G   D/F#   A\nFree fallin', fallin'\n  D/F#     G       G   D/F#   A\nFree fallin', fallin'"
     },
     {
       "id": 4,
@@ -162,6 +167,18 @@
       "title": "Make It Rain",
       "lyrics": "[Intro]\nAm Em B7 Em\nAm Em B7 Em\n \n \n[Verse 1]\nAm                 Em\n  When the sins of my father\nB7              Em\n  Weigh down in my soul\nAm             Em\n  And the pain of my mother\nB7                Em\n  Will not let me go\nAm                           Em\n  Well I know there can come fire from the sky\nB7                            Em\n  To refine the purest of kings\nAm                            Em\n  And even though I know this fire brings me pain\nB7                     Em\n  Even so and just the same\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n            Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Verse 2]\nAm                       Em\n  And the seed needs the water\nB7                           Em\n  Before it grows out of the ground\nAm                             Em\n  But it just keeps on getting hotter\nB7                       Em\n  And the hunger more profound\nAm                           Em\n  Well I know there can come tears from the eyes\nB7                               Em\n  But they may as well all be in vain\nAm                        Em\n  Even though I know this tears come with pain\nB7                      Em\n  Even so and just the same\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Guitar Solo]\nAm Em B7 Em\nAm Em B7 Em\n \n**I have no idea of the actual tab, plus I play acoustic so it likely won't be right if I tried to figure it\nout for you guys*\n \n \n[Verse 3]\nAm                         Em\n  And the seas are full of water\nB7                 Em\n  That stop by the shore\nAm                        Em\n  Just like the riches of grandeur\nB7                     Em\n  That never reach the poor\nAm                              Em\n  So let the clouds fill with thunderous applause\nB7                      Em\n  And let lightning be the veins\nAm                      Em\n  And fill the sky with all that they can drop\nB7                           Em\n  When it's time to make a change \n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nMake it rain\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n        Am\nMake it rain\n        Em\nMake it rain down Lord\n        B7\nMake it rain\n        Em\nOh, make it rain\n \n \n[Chorus]\n        Am\nMake it rain\n        Em\nMake it rain\n        B7\nMake it rain\n        Em\nMake it rain\n        Am\nMake it rain\n        Em\nMake it rain\n        B7\nMake it rain\n        Em\nOh, make it rain",
       "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Blues Delux",
+      "lyrics": "e|-------------6v---9b---6---------------------6-----6/8----6-------------------|\nB|--------6-8--------------6-------------------6-----6/8----6-------------------|\nG|----6h7--------------------8--6h7------------------6/8----6-------------------|\nD|--8-------------------------------8--6v---------------------------------------|\nA|------------------------------------------------------------------------------|\nE|-----------------------------------------------6------------------------------|\n \ne|--------9-11b-11b-11b-11b-11b-9-----------9b---13\\-------13b-13-13b-13-11b-11--11-----------------------|\nB|--11-11-------------------------11v-----11-----13\\---------------------------14--14p11---11-11v---------|\nG|--------------------------------------10-----------------------------------------------12---------------|\nD|--------------------------------------------------------------------------------------------------------|\nA|--------------------------------------------------------------------------------------------------------|\nE|--------------------------------------------------------------------------------------------------------|\n \ne|-----------------------------------------------------------------6-8-7p6---9b(11)-9-6-------------------|\nB|----11-13b(13)b-11-11----11------------------------------6-9b(10)-------9-6----------6------------------|\nG|--12-----------------------10h12-10---------------6-8b(9)-----------------------------8/9-8p6-6-(6)h8---|\nD|-----------------------------------11\\10-8-----5-8-------------------------------------------8----------|\nA|------------------------------------------8-7-6---------------------------------------------------------|\nE|--------------------------------------------------------------------------------------------------------|\n \ne|--18ֿ\\---11b(13)(11)(12)-9------------------------13---------------------------|\nB|---x---------------------11v----------11-13b(15)(13)-13b(15)(13)(15)(13)p11---|\nG|---x----------------------------10-12-----------------------------------------|\nD|---x--------------------------------------------------------------------------|\nA|------------------------------------------------------------------------------|\nE|------------------------------------------------------------------------------|\n \ne|-13b-13-13b-13-11b(12)-11----11------------------------------------------------|\nB|--------------------------14----14p11----11-11v---11-13b(15)(13)(15)-11-11-----|\nG|--------------------------------------12--------12-----------------------------|\nD|-------------------------------------------------------------------------------|\nA|-------------------------------------------------------------------------------|\nE|-------------------------------------------------------------------------------|\n ",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Stairway to Heaven",
+      "lyrics": "Am E+* C D F G Am\n \n          Am         E+ *\nThere’s a lady who’s sure\n         C           D\nAll that glitters is gold\n          F                    G  Am\nAnd she’s buying a stairway to heaven.\n         Am             E+ *\nWhen she gets there she knows\n       C              D\nIf the stores are all closed\n       F                         G    Am\nWith a word she can get what she came for.\nC    D    F    Am            C        G              D\nOoh, ooh, Ooh, ooh and she’s buying a stairway to heaven.\n \n          Am          E+ *\nThere’s a sign on the wall\n        C           D\nBut she wants to be sure\n          F                             G   Am\ncause you know sometimes words have two meanings.\n     Am          E+ *\nIn a tree by the brook\n          C            D\nThere’s a songbird who sings,\n          F                       G  Am\nSometimes all of our thoughts are misgiven.\n \nAm E+ C D F G Am\n \nD                Am    Em D C D\nOoh, it makes me wonder,\nD  Dsus4 D                Am   Em D C D\nOoh,      and it makes me wonder.\n \n          C         G\nThere’s a feeling I get\n       Am\nWhen I look to the west,\n       C         G          F   Am\nAnd my spirit is crying for leaving.\n      C               G\nIn my thoughts I have seen\n         Am\nRings of smoke through the trees,\n        C         G               F   Am\nAnd the voices of those who stand looking.\n \nC G Am\n \nD                Am    Em D C D\nOoh, it makes me wonder,\nD  Dsus4 D                Am   Em D C D\nOoh,      and it makes me wonder.\n \n        C              G\nAnd its whispered that soon\n      Am\nIf we all call the tune\n         C          G          F   Am\nThen the piper will lead us to reason.\n      C            G\nAnd a new day will dawn\n    Am\nFor those who stand long\n        C            G         F    Am\nAnd the forests will echo with laughter.\n \nC G Am\n \nAm D   Am  Em D C D\n \nAm\nOoooh\n \nD        Am   Em D C D\nOooooooh\n \nC            G              Am\nIf there’s a bustle in your hedgerow\n         G\nDon’t be alarmed now,\nC           G                    Am\nIt’s just a spring clean for the may queen.\nC              G                 Am\nYes, there are two paths you can go by\n           G\nBut in the long run\nC             G                  Am\nThere’s still time to change the road you’re on.\nD                Am    Em D C D\nOoh, it makes me wonder\n \nC            G              Am\nYour head is humming and it won’t go\n        G\nIn case you don’t know,\nC          G              Am\nThe pipers calling you to join him,\nC          G                Am\nDear lady, can you hear the wind blow,\n        G\nAnd did you know\nC             G           Am              C G Am\nYour stairway lies on the whispering wind.\n \nD Dsus2 D Dsus4 D Dsus2 D Dsus4  C Cadd9 C Cadd9 C  2x\n \nAm        G                F   G \\ Am\nAnd as we wind on down the road\n            G               F   G \\ Am\nOur shadows taller than our soul.\n              G           F   G \\ Am\nThere walks a lady we all know\n           G                        F   G \\ Am\nWho shines white light and wants to show\n         G                    F   G \\ Am\nHow everything still turns to gold.\n           G           F   G \\ Am\nAnd if you listen very hard\n              G              F   G \\ Am\nThe tune will come to you at last.\n             G              F  G \\ Am\nWhen all are one and one is all\n        G               F\nTo be a rock and not to roll.\n \n          F        G              Am\nAnd she’s buying a stairway to heaven.",
+      "id": 13
     }
   ],
   "userSongs": [
@@ -206,6 +223,12 @@
       "userId": 10,
       "canEdit": false,
       "id": 11
+    },
+    {
+      "id": 12,
+      "songId": 9,
+      "userId": 1,
+      "canEdit": true
     }
   ],
   "messages": [
@@ -213,7 +236,7 @@
       "id": 1,
       "songId": 1,
       "userId": 2,
-      "message": "Hey man! I really love this song. I'm going to work on the second verse and maybe a third verse"
+      "message": "Hey man! I really love this song. I'm going to work on the second verse and maybe a third verse."
     },
     {
       "id": 2,
@@ -238,6 +261,35 @@
       "userId": 1,
       "message": "yeah I'll work on it this weekend and probably throw it up on Sunday",
       "id": 5
+    },
+    {
+      "songId": 9,
+      "userId": 1,
+      "message": "hey man long time no see",
+      "id": 6
+    }
+  ],
+  "uploads": [
+    {
+      "songId": 4,
+      "userId": 2,
+      "url": "https://firebasestorage.googleapis.com/v0/b/headspace-4f95d.appspot.com/o/Yard%20Man%20(MIX)%206.13.20_v1.mp3?alt=media&token=9d69868c-7422-4bf3-a0e8-0f394943072b",
+      "name": "Yard Man (MIX) 6.13.20_v1.mp3",
+      "id": 1
+    },
+    {
+      "songId": 4,
+      "userId": 2,
+      "url": "https://firebasestorage.googleapis.com/v0/b/headspace-4f95d.appspot.com/o/11-Spectre%20Induction.mp3?alt=media&token=a1855f71-1b73-475d-9cdd-aecc84aca1f8",
+      "name": "Yard Man (tinkering)",
+      "id": 2
+    },
+    {
+      "songId": 1,
+      "userId": 1,
+      "url": "https://firebasestorage.googleapis.com/v0/b/headspace-4f95d.appspot.com/o/30-Uplink.mp3?alt=media&token=e692c18e-1b30-40bf-bb77-443ebe607386",
+      "name": "30-Uplink.mp3",
+      "id": 3
     }
   ]
 }

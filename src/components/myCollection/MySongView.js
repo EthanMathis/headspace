@@ -4,6 +4,7 @@ import { getSongById } from '../../modules/songManager';
 import { denyUserSong, acceptUserSong ,getUserSongsBySongId } from "../../modules/userSongManager";
 import { MessageList } from "../messages/MessageList";
 import { CollabRequestCard } from "./CollabRequestCard";
+import { UploadFile } from "../../firebase/UploadFile";
 
 export const MySongView = () => {
     const [mySong, setMySong] = useState({})
@@ -62,6 +63,8 @@ export const MySongView = () => {
                                    collabRequest={request}
                                    handleCollabDeny={handleCollabDeny}
                                    handleCollabApprove={handleCollabApprove} />) : null}
+
+            <UploadFile songId={songId} />
         </div>
         <div className="border border-info rounded float-right m-2 p-2">
             <h2 className="text-center">Message Board</h2>
