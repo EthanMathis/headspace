@@ -17,7 +17,7 @@ export const getUserSongs = (userId) => {
 }
 
 export const getSongById = (songId) => {
-    return fetch(`${url}/songs/${songId}`)
+    return fetch(`${url}/songs/${songId}?_expand=user`)
     .then(response => response.json())
 }
 

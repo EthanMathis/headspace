@@ -10,9 +10,10 @@ export const FriendSongView = () => {
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
     const [friendSong, setFriendSong] = useState({})
-    const { songId } = useParams()
     const [isPending, setIsPending] = useState(false)
     const [canEdit, setCanEdit] = useState({})
+
+    const { songId } = useParams()
     const history = useHistory()
 
     
@@ -61,17 +62,22 @@ export const FriendSongView = () => {
             </div>
 
             <div className="d-flex justify-content-around">
-                <section>
+                <div className="d-flex">
                     <div  className="border border-info rounded m-2 p-2">
-                        <h2>{friendSong.title}</h2>
-                        {/* <h4>Written By: {friendSong.user.name}</h4> */}
+                        <h2 className="text-center">{friendSong.title}</h2>
+                        <h4 className="text-center">Written By: {friendSong.user?.name}</h4>
                         <pre>{friendSong.lyrics}</pre>
                     </div>
-                </section>
+                    {canEdit?.canEdit &&
+                        <div>
+                            <button type="button" className="btn btn-primary mt-2" onClick={() => history.push(`/song/${songId}/edit`)}>Edit</button>
+                        </div>}
+                </div>
                 {canEdit?.canEdit && 
                 <div>
                     <MusicPlayer songId={songId} />
                 <section className="messageBoard">
+                <h2 className="text-center">Message Board</h2>
                     <MessageList />
                 </section>
                 </div>}
