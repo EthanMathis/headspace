@@ -56,16 +56,16 @@ export const MessageList = () => {
                <MessageCard key={message.id}
                             message={message}
                             handleDeleteMessage={handleDeleteMessage} /> )}
-
-            <div className="newMessageInput">
+            
+            <div className="d-flex mt-4">
                 <input type="text"
                     id="message"
-                    className="newMessage"
+                    className="flex-grow-1"
                     required
                     placeholder="New Message"
                     value={newMessage.message}
                     onChange={handleInputChange} />
-                <button type="button" className="btn btn-info" onClick={handleAddMessage}>Send</button>
+                <button type="button" className="btn btn-info btn-sm" onClick={handleAddMessage}>Send</button>
             </div> 
         </section>
     )

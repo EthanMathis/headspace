@@ -54,6 +54,7 @@ export const MySongView = () => {
         <div className="d-flex flex-row justify-content-around">
             <div className="col-sm border border-info rounded float-left m-2 p-2">
                 <h2 className="text-center">{mySong.title}</h2>
+                <h4 className="text-center">Written By: {mySong.user?.name}</h4>
                 <pre>{mySong.lyrics}</pre>
             </div>     
         <div className="mx-auto">
@@ -66,7 +67,7 @@ export const MySongView = () => {
 
             <UploadFile songId={songId} />
         </div>
-        <div className="border border-info rounded float-right m-2 p-2">
+        <div className="float-right m-2 p-2">
             <h2 className="text-center">Message Board</h2>
                 <MessageList />
         </div>
